@@ -19,7 +19,7 @@ MySQL::~MySQL()
 // result: Array of values retrieved
 double* MySQL::queryValues(String^ cond, double result[])
 {
-	String^ constring = L"datasource=localhost;port=3306;username=root;password=Light33!";
+	String^ constring = L"datasource=localhost;port=3306;username=root;password=";
 	MySqlConnection^ connection = gcnew MySqlConnection(constring);
 	double condition[13];
 	String^ dateTemp;
